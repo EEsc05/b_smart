@@ -1,0 +1,5 @@
+# Arbitrary SOFTWARE DEMONSTRATION threshold, not a clinical threshold.
+imbalance:
+  enabled: true
+  threshold_pct: 30.0
+  status: demonstration_only

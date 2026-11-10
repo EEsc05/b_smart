@@ -1,0 +1,2 @@
+session_id,start_ms,end_ms,event_type,muscle_site,side,source
+session_001,0,30000,shoulder_takeover,trapezius,right,simulator_ground_truth

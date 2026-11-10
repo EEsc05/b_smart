@@ -1,0 +1,3 @@
+EMG_i,b_EMG,time,EMG_f,NIRS,ECG,acc,
+
+# calculation or direct EMG over time (code calculates new inputs rather than have it in training)

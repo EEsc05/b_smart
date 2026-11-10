@@ -1,0 +1,5 @@
+# No physiological thresholds approved; default rules remain inactive.
+imbalance:
+  enabled: false
+  threshold_pct: null
+  status: awaiting_science_review

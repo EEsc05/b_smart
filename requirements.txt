@@ -1,0 +1,4 @@
+pydantic>=2,<3
+scipy>=1.14,<2
+PyYAML>=6,<7
+pytest>=8,<10

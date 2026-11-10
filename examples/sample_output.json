@@ -1,0 +1,74 @@
+{
+  "session_id": "session_001",
+  "exercise": "bicep_curl",
+  "data_source": "simulated",
+  "start_ms": 0,
+  "end_ms": 30000,
+  "metrics": {
+    "muscles": [
+      {
+        "muscle_site": "biceps",
+        "side": "right",
+        "rms_mv": 0.35,
+        "mean_absolute_mv": 0.35,
+        "normalized_activation_pct": null,
+        "quality": "ok"
+      },
+      {
+        "muscle_site": "trapezius",
+        "side": "left",
+        "rms_mv": 1.0,
+        "mean_absolute_mv": 1.0,
+        "normalized_activation_pct": null,
+        "quality": "ok"
+      },
+      {
+        "muscle_site": "trapezius",
+        "side": "right",
+        "rms_mv": 1.38,
+        "mean_absolute_mv": 1.38,
+        "normalized_activation_pct": null,
+        "quality": "ok"
+      }
+    ],
+    "bilateral": [
+      {
+        "muscle_site": "trapezius",
+        "imbalance_pct": 31.932773109243687,
+        "right_greater_than_left_pct": 37.999999999999986
+      }
+    ],
+    "cardiovascular": {
+      "heart_rate_bpm": 120.0,
+      "heart_rate_recovery_bpm": null,
+      "quality": "ok"
+    },
+    "oxygenation": [
+      {
+        "muscle_site": "biceps",
+        "side": "right",
+        "smo2_pct": 62.0,
+        "baseline_smo2_pct": null,
+        "change_percentage_points": null,
+        "minimum_pct": 62.0,
+        "maximum_pct": 62.0,
+        "quality": "ok"
+      }
+    ],
+    "movement": {
+      "rep_count": 10,
+      "average_rep_duration_s": 3.0,
+      "movement_variability_cv": 0.0,
+      "mean_acceleration_m_s2": 1.9966777408637875,
+      "quality": "ok"
+    },
+    "location": {
+      "timestamp_ms": 0,
+      "latitude": 50.45,
+      "longitude": -104.61
+    }
+  },
+  "warnings": [],
+  "quality_flags": [],
+  "model_version": "rules_v0.1"
+}

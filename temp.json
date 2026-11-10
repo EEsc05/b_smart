@@ -1,0 +1,38 @@
+{
+    "sessions": [
+        {
+            "session_id": "S001",
+            "rep_count": 10,
+            "muscles": {
+            "right_trapezius": {
+                "activation": 0.72,
+                "strain_flag": true
+                }
+            }
+        }
+    ],
+    "alerts": [
+        {
+            "type": "shoulder_takeover",
+            "severity": "warning",
+            "message": "Elevated right trapezius activity"
+        }
+    ],
+    "workout": [
+        {
+            "exercise": "shoulder_press",
+            "weight": 50,
+            "sets": 3
+        },
+        {
+            "exercise": "lateral_raise",
+            "weight": 15,
+            "sets": 3
+        },
+        {
+            "exercise": "front_raise",
+            "weight": 20,
+            "sets": 3
+        }
+    ]
+}

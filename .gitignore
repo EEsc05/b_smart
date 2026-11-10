@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+notebook_outputs/
+.ipynb_checkpoints/
