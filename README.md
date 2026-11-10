@@ -25,7 +25,7 @@ print(output.model_dump_json(indent=2))
 summary = engine.get_session_summary("session_001")
 ```
 
-`examples/sample_output.json` is the full expected response. `examples/generate.py` regenerates this deterministic ten-repetition fixture. All example data is simulated. No public dataset was downloaded and no model was trained.
+`examples/sample_output.json` is the full expected response. `examples/generate.py` regenerates this deterministic ten-repetition fixture. All example data is simulated. The rule-based fixture is separate from the public-data ML baseline described below.
 
 ## Architecture and simulator integration
 
@@ -92,10 +92,18 @@ Default thresholds are inactive and await Yara's review. The separate demo uses 
 
 ## Scope and next steps
 
-Phase 2 adds FastAPI/OpenAPI endpoints, an incremental session buffer, and day/week history including the four-week scenario. No API server exists yet. Phase 3 adds independent scikit-learn pipelines and participant-separated evaluation. Public-data use requires documentation/licence verification and Yara's explicit approval before download or training; no licence approval is assumed. Synthetic test scores must never be reported as real-world validation.
+Phase 2 adds FastAPI/OpenAPI endpoints, an incremental session buffer, and day/week history including the four-week scenario. No API server exists yet. A separate scikit-learn activity baseline now includes participant-separated evaluation; see below. The MHEALTH baseline uses the user-authorized public-data workflow with verified CC BY 4.0 attribution; additional datasets require their own provenance and licence review. Synthetic test scores must never be reported as real-world validation.
 
 Future integration includes authentication/Coach connect permissions, persistent summaries, streaming transport, other exercises and conservative workout recommendations. This phase provides no diagnosis, personalized readiness score, or workout prescription. Confirm simulator calibration/reference protocols, sampling characteristics, missing-data conventions and recording provenance before integration with real sensors.
 
 ## Colab notebook
 
-Open [notebooks/bioteq_colab.ipynb](notebooks/bioteq_colab.ipynb) in Google Colab and run all cells. It installs dependencies, loads the simulated sample, runs the rule-based engine, displays metric tables and sensor/RMS plots, and exports default/demo JSON outputs. Push the code to GitHub first, or select the repository ZIP upload option for local changes. No trained ML model is included.
+Open [notebooks/bioteq_colab.ipynb](notebooks/bioteq_colab.ipynb) in Google Colab and run all cells. It installs dependencies, loads the simulated sample, runs the rule-based engine, displays metric tables and sensor/RMS plots, and exports default/demo JSON outputs. Push the code to GitHub first, or select the repository ZIP upload option for local changes. The final section downloads licensed public data and trains/evaluates the activity baseline.
+
+## Public-data ML baseline
+
+See [the model guide](docs/ACTIVITY_MODEL.md) for dataset attribution, licensing, input requirements, evaluation protocol, and limitations. Run `pip install -r requirements-ml.txt` then `python -m bioteq.ml.activity`, or run the final Colab section. This downloads MHEALTH, extracts accelerometer-window features, evaluates a random forest on held-out participants, saves metrics to `reports/activity_metrics.json`, and trains a reusable local model. It recognizes activities; compensation and fatigue remain unvalidated.
+
+### Muscle visualizations
+
+The Colab notebook includes a front/back biceps and trapezius schematic and a time-binned EMG RMS heatmap, with PNG/SVG exports. Gray indicates unavailable measurements. Raw mV is the default; optional per-muscle RMS references enable percent-of-reference normalization. Raw amplitude does not measure comparable effort across muscles. Unsupported muscle sites still appear in the time chart. The sample is simulated, and the activity classifier does not estimate activation. Visualization requires matplotlib (installed by the notebook).

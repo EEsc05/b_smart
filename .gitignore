@@ -5,3 +5,7 @@ __pycache__/
 
 notebook_outputs/
 .ipynb_checkpoints/
+
+# Public dataset caches and reproducible trained binaries
+data/
+artifacts/

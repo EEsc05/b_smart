@@ -1,0 +1,523 @@
+{
+  "protocol": "leave_one_subject_out; fixed model; non-overlapping 2-second pure-label windows",
+  "pooled_out_of_fold": {
+    "accuracy": 0.9622698460609719,
+    "balanced_accuracy": 0.9634246702773946,
+    "macro_f1": 0.9639679441266438,
+    "log_loss": 0.15269921862550728,
+    "multiclass_brier": 0.0747340203574146
+  },
+  "subject_mean_accuracy": 0.9632045906097216,
+  "subject_std_accuracy": 0.04842255865547586,
+  "majority_baseline_accuracy": 0.08994868699064293,
+  "per_class": {
+    "standing": {
+      "precision": 0.908256880733945,
+      "recall": 1.0,
+      "f1-score": 0.9519230769230769,
+      "support": 297.0
+    },
+    "sitting": {
+      "precision": 1.0,
+      "recall": 0.8996655518394648,
+      "f1-score": 0.9471830985915493,
+      "support": 299.0
+    },
+    "lying": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 299.0
+    },
+    "walking": {
+      "precision": 0.9966777408637874,
+      "recall": 1.0,
+      "f1-score": 0.9983361064891847,
+      "support": 300.0
+    },
+    "climbing_stairs": {
+      "precision": 0.9862068965517241,
+      "recall": 0.9862068965517241,
+      "f1-score": 0.9862068965517241,
+      "support": 290.0
+    },
+    "waist_bends": {
+      "precision": 0.9781021897810219,
+      "recall": 0.9852941176470589,
+      "f1-score": 0.9816849816849816,
+      "support": 272.0
+    },
+    "arm_elevation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 286.0
+    },
+    "knees_bending": {
+      "precision": 0.9748201438848921,
+      "recall": 0.954225352112676,
+      "f1-score": 0.9644128113879004,
+      "support": 284.0
+    },
+    "cycling": {
+      "precision": 0.9900662251655629,
+      "recall": 1.0,
+      "f1-score": 0.9950083194675541,
+      "support": 299.0
+    },
+    "jogging": {
+      "precision": 0.84472049689441,
+      "recall": 0.918918918918919,
+      "f1-score": 0.8802588996763754,
+      "support": 296.0
+    },
+    "running": {
+      "precision": 0.9117647058823529,
+      "recall": 0.8378378378378378,
+      "f1-score": 0.8732394366197183,
+      "support": 296.0
+    },
+    "jumping": {
+      "precision": 1.0,
+      "recall": 0.9789473684210527,
+      "f1-score": 0.9893617021276596,
+      "support": 95.0
+    },
+    "accuracy": 0.9622698460609719,
+    "macro avg": {
+      "precision": 0.9658846066464748,
+      "recall": 0.9634246702773946,
+      "f1-score": 0.9639679441266438,
+      "support": 3313.0
+    },
+    "weighted avg": {
+      "precision": 0.9636576376900967,
+      "recall": 0.9622698460609719,
+      "f1-score": 0.9622317061547936,
+      "support": 3313.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      297,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      30,
+      269,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      299,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      300,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      286,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      268,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      286,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      4,
+      6,
+      0,
+      271,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      299,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      272,
+      24,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      48,
+      248,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      93
+    ]
+  ],
+  "class_order": [
+    "standing",
+    "sitting",
+    "lying",
+    "walking",
+    "climbing_stairs",
+    "waist_bends",
+    "arm_elevation",
+    "knees_bending",
+    "cycling",
+    "jogging",
+    "running",
+    "jumping"
+  ],
+  "folds": [
+    {
+      "test_subject": 1,
+      "train_subjects": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "test_windows": 341,
+      "accuracy": 0.9882697947214076,
+      "balanced_accuracy": 0.9892981539533263,
+      "macro_f1": 0.9892251362096315,
+      "log_loss": 0.14862573766733417,
+      "multiclass_brier": 0.060401993995275335
+    },
+    {
+      "test_subject": 2,
+      "train_subjects": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "test_windows": 345,
+      "accuracy": 0.8985507246376812,
+      "balanced_accuracy": 0.8929292929292929,
+      "macro_f1": 0.8881576482195678,
+      "log_loss": 0.21376460964868538,
+      "multiclass_brier": 0.11592883008862497
+    },
+    {
+      "test_subject": 3,
+      "train_subjects": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "test_windows": 341,
+      "accuracy": 0.8592375366568915,
+      "balanced_accuracy": 0.8666666666666667,
+      "macro_f1": 0.8328064479380269,
+      "log_loss": 0.22964696333011952,
+      "multiclass_brier": 0.16129198333117947
+    },
+    {
+      "test_subject": 4,
+      "train_subjects": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "test_windows": 340,
+      "accuracy": 0.9205882352941176,
+      "balanced_accuracy": 0.9249999999999999,
+      "macro_f1": 0.9115698749739871,
+      "log_loss": 0.23157467932401854,
+      "multiclass_brier": 0.1383934750773361
+    },
+    {
+      "test_subject": 5,
+      "train_subjects": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "test_windows": 332,
+      "accuracy": 0.9969879518072289,
+      "balanced_accuracy": 0.9969135802469135,
+      "macro_f1": 0.9969125214408233,
+      "log_loss": 0.0736012689665083,
+      "multiclass_brier": 0.020115851307010768
+    },
+    {
+      "test_subject": 6,
+      "train_subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "test_windows": 312,
+      "accuracy": 0.9807692307692307,
+      "balanced_accuracy": 0.9833333333333334,
+      "macro_f1": 0.9832354364168757,
+      "log_loss": 0.09812316147465706,
+      "multiclass_brier": 0.043739764049502396
+    },
+    {
+      "test_subject": 7,
+      "train_subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "test_windows": 327,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "log_loss": 0.1986566019500657,
+      "multiclass_brier": 0.07880350485515743
+    },
+    {
+      "test_subject": 8,
+      "train_subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "test_windows": 320,
+      "accuracy": 0.99375,
+      "balanced_accuracy": 0.9930555555555555,
+      "macro_f1": 0.993503248375812,
+      "log_loss": 0.17488288247010136,
+      "multiclass_brier": 0.07923029239367987
+    },
+    {
+      "test_subject": 9,
+      "train_subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "test_windows": 331,
+      "accuracy": 0.9969788519637462,
+      "balanced_accuracy": 0.9971264367816092,
+      "macro_f1": 0.9971718914773272,
+      "log_loss": 0.05139585929760039,
+      "multiclass_brier": 0.014644102725756385
+    },
+    {
+      "test_subject": 10,
+      "train_subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "test_windows": 324,
+      "accuracy": 0.9969135802469136,
+      "balanced_accuracy": 0.9969135802469135,
+      "macro_f1": 0.996726992683866,
+      "log_loss": 0.09701244023033255,
+      "multiclass_brier": 0.026703791962073637
+    }
+  ],
+  "provenance": {
+    "dataset": "MHEALTH",
+    "source": "https://archive.ics.uci.edu/dataset/319/mhealth+dataset",
+    "download_url": "https://archive.ics.uci.edu/static/public/319/mhealth+dataset.zip",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Banos, O., Garcia, R., & Saez, A. (2014). MHEALTH. UCI. DOI:10.24432/C5TW22",
+    "source_sha256": "16ad0ce709f3f00df18f348610d15bce0884b79e2143f57f446493673f02b8e0",
+    "transformations": "9 accelerometer channels; 100-row non-overlapping windows; exclude null, mixed-label, nonfinite windows; mean/std/RMS/range"
+  },
+  "windows": 3313,
+  "windows_per_class": {
+    "standing": 297,
+    "sitting": 299,
+    "lying": 299,
+    "walking": 300,
+    "climbing_stairs": 290,
+    "waist_bends": 272,
+    "arm_elevation": 286,
+    "knees_bending": 284,
+    "cycling": 299,
+    "jogging": 296,
+    "running": 296,
+    "jumping": 95
+  },
+  "versions": {
+    "python": "3.12.3",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4"
+  },
+  "limitations": [
+    "Only 10 participants; no independent external validation.",
+    "Pure-label windows exclude transitions and null activity; deployment may perform worse.",
+    "Probabilities are uncalibrated, not medical confidence or risk.",
+    "No compensation, fatigue, injury, EMG or NIRS labels; no such claims supported.",
+    "Out-of-fold scores evaluate the training procedure; final model is refit on all participants."
+  ]
+}
